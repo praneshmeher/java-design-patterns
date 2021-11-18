@@ -3,11 +3,9 @@ package com.creational;
 public class Singleton {
 	
 	private static Singleton obj;
-	private Singleton() {
-		System.out.println("Singleton");
-	};
+	private Singleton() {};
 	
-	public static synchronized Singleton getSingleton() {
+	synchronized public static Singleton getSingleton() {
 		if(obj==null)
 			obj = new Singleton();
 		return obj;
