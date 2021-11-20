@@ -1,4 +1,4 @@
-package com.creational;
+package creational;
 
 public class Singleton3 {
 	
