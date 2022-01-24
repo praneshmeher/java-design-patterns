@@ -2,12 +2,12 @@ package creational;
 
 public class Singleton {
 	
-	private static Singleton obj;
+	private static Singleton instance;
 	private Singleton() {};
 	
 	synchronized public static Singleton getSingleton() {
-		if(obj==null)
-			obj = new Singleton();
-		return obj;
+		if(instance==null)
+			instance = new Singleton();
+		return instance;
 	}
 }
